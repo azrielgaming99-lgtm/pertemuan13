@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Hitung Volume Bangun Ruang</title>
+</head>
+<body>
+    <h2>Hitung Volume Bangun Ruang</h2>
+
+    <button onclick="hitungBalok()">Volume Balok</button><br><br>
+    <button onclick="hitungTabung()">Volume Tabung</button><br><br>
+    <button onclick="hitungBola()">Volume Bola</button><br><br>
+    <button onclick="hitungPrisma()">Volume Prisma Segitiga</button><br><br>
+    <button onclick="hitungKerucut()">Volume Kerucut</button>
+
+    <script>
+        function hitungBalok() {
+            let p = prompt("Masukkan panjang balok:");
+            let l = prompt("Masukkan lebar balok:");
+            let t = prompt("Masukkan tinggi balok:");
+            let volume = p * l * t;
+            alert("Volume Balok = " + volume);
+        }
+
+        function hitungTabung() {
+            let r = prompt("Masukkan jejari tabung:");
+            let t = prompt("Masukkan tinggi tabung:");
+            let volume = 3.14 * r * r * t;
+            alert("Volume Tabung = " + volume);
+        }
+
+        function hitungBola() {
+            let r = prompt("Masukkan jejari bola:");
+            let volume = 3.14 * r * r * r;
+            alert("Volume Bola = " + volume);
+        }
+
+        function hitungPrisma() {
+            let ta = prompt("Masukkan tinggi alas segitiga:");
+            let pa = prompt("Masukkan panjang alas segitiga:");
+            let tp = prompt("Masukkan tinggi prisma:");
+            let volume = 0.5 * ta * pa * tp;
+            alert("Volume Prisma Segitiga = " + volume);
+        }
+
+        function hitungKerucut() {
+            let r = prompt("Masukkan jejari alas kerucut:");
+            let t = prompt("Masukkan tinggi kerucut:");
+            let volume = (1/3) * 3.14 * r * r * t;
+            alert("Volume Kerucut = " + volume);
+        }
+    </script>
+</body>
+</html>
